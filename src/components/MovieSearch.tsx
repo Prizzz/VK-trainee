@@ -27,11 +27,11 @@ const MovieSearch: React.FC = () => {
     searchMovies();
   }, [page]);
 
-  const handlePaginationChange = (event: React.ChangeEvent<unknown>, value: number) => {
+  const handlePaginationChange = (_event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
   };
 
-  const handleYearRange = (event: Event, newValue: number | number[], activeThumb: number) => {
+  const handleYearRange = (_event: Event, newValue: number | number[], activeThumb: number) => {
     const minDistance = 5;
 
     if (!Array.isArray(newValue)) {
@@ -45,7 +45,7 @@ const MovieSearch: React.FC = () => {
     }
   };
 
-  const handleRatingRange = (event: Event, newValue: number | number[], activeThumb: number) => {
+  const handleRatingRange = (_event: Event, newValue: number | number[], activeThumb: number) => {
     const minDistance = 0.5;
 
     if (!Array.isArray(newValue)) {
