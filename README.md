@@ -18,3 +18,5 @@
    npm run dev
    ```
    Откройте браузер и перейдите по адресу http://localhost:5173/.
+
+Также вы можете открыть [deploy](https://vk-trainee.vercel.app/) проекта
